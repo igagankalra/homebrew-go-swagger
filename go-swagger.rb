@@ -6,12 +6,7 @@ class GoSwagger < Formula
   option "with-goswagger", "Names the binary goswagger instead of swagger"
 
   def install
-    nm = "swagger"
-    if build.with? "goswagger"
-      nm = "goswagger"
-    end
-    system "mv", @@filename, nm
-    bin.install nm
+    system "make", "install"
   end
 
   # test do
