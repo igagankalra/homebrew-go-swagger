@@ -6,7 +6,7 @@ class GoSwagger < Formula
   option "with-goswagger", "Names the binary goswagger instead of swagger"
 
   def install
-    system "make", "install"
+    head "https://github.com/go-swagger/go-swagger.git" , branch: "master"
   end
 
   # test do
