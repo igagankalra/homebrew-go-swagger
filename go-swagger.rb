@@ -6,7 +6,7 @@ class GoSwagger < Formula
   option "with-goswagger", "Names the binary goswagger instead of swagger"
 
   def install
-   bin.install GoSwagger
+   bin.install "GoSwagger"
   end
 
   # test do
